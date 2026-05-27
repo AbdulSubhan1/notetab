@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NoteTab — Free Online Notepad, No Login Required</title>
+  <meta name="description" content="A fast, free online notepad. Open, type, and your notes are saved automatically in your browser. No account needed.">
+  <meta name="keywords" content="online notepad, free notes, browser notepad, quick notes, no login">
+  <meta property="og:title" content="NoteTab — Free Online Notepad">
+  <meta property="og:description" content="Type and your notes are saved instantly. No sign-up, no sync, just notes.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0f0f0f" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"NoteTab","description":"Free browser-based notepad with no login required.","applicationCategory":"ProductivityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Mobile header (hidden on desktop) -->
+  <header class="top-bar">
+    <button class="icon-btn" id="menu-btn" aria-label="Open notes list">&#9776;</button>
+    <span class="app-name">NoteTab</span>
+    <button class="icon-btn" id="theme-btn-top" aria-label="Toggle theme"></button>
+  </header>
+
+  <!-- Sidebar overlay backdrop -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar" aria-label="Notes">
+    <div class="sidebar-top">
+      <span class="app-name">NoteTab</span>
+      <button class="icon-btn" id="theme-btn-side" aria-label="Toggle theme"></button>
+    </div>
+    <ul class="note-list" id="note-list" role="list"></ul>
+    <button class="new-btn" id="new-btn">+ New Note</button>
+  </aside>
+
+  <!-- Editor -->
+  <main class="editor-wrap">
+    <div
+      class="editor"
+      id="editor"
+      contenteditable="true"
+      spellcheck="true"
+      role="textbox"
+      aria-multiline="true"
+      aria-label="Note content"
+    ></div>
+    <span class="saved-badge" id="saved-badge" aria-live="polite">Saved</span>
+  </main>
+
+  <!-- Ad banner -->
+  <div class="ad-bar" role="complementary" aria-label="Advertisement">
+    <!-- Ad slot: replace contents with AdSense <ins> tag -->
+    <span class="ad-label">Advertisement</span>
+  </div>
+
+  <!-- SEO static content for search engine indexing -->
+  <footer class="seo-note">
+    NoteTab is a free online notepad. Everything you type is saved automatically in your
+    browser — no account, no cloud, no signup. Works on any device.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
