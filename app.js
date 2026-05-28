@@ -262,6 +262,24 @@
   if (themeBtnTop)  themeBtnTop.addEventListener('click',  toggleTheme);
   if (themeBtnSide) themeBtnSide.addEventListener('click', toggleTheme);
 
+  // ── Modals ────────────────────────────────────────────────
+
+  function bindModal(btnId, modalId) {
+    var btn   = document.getElementById(btnId);
+    var modal = document.getElementById(modalId);
+    if (!btn || !modal) return;
+    btn.addEventListener('click', function () { modal.showModal(); });
+    modal.querySelector('.nt-modal-close').addEventListener('click', function () { modal.close(); });
+    modal.addEventListener('click', function (e) {
+      // Close when clicking the backdrop (outside the inner box)
+      if (e.target === modal) { modal.close(); }
+    });
+  }
+
+  bindModal('footer-about',    'modal-about');
+  bindModal('footer-feedback', 'modal-feedback');
+  bindModal('footer-privacy',  'modal-privacy');
+
   // ── Init ──────────────────────────────────────────────────
 
   loadState();

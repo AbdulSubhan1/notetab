@@ -316,6 +316,120 @@ body {
   white-space: nowrap;
 }
 
+/* ─── Footer buttons ─────────────────────────────────────── */
+.footer-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 12px;
+  font-family: inherit;
+  padding: 2px 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.footer-btn:hover { color: var(--text); text-decoration: underline; }
+
+.footer-copy {
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* ─── Modals ─────────────────────────────────────────────── */
+.nt-modal {
+  background: var(--sidebar);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0;
+  max-width: 460px;
+  width: calc(100% - 32px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+.nt-modal::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+.nt-modal-inner {
+  padding: 28px 28px 24px;
+  position: relative;
+}
+
+.nt-modal h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: var(--accent);
+}
+
+.nt-modal p {
+  font-size: 14px;
+  line-height: 1.65;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.nt-modal ul {
+  font-size: 14px;
+  line-height: 1.8;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.nt-modal code {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 12px;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+}
+
+.nt-modal-note {
+  font-size: 12px !important;
+  color: var(--muted) !important;
+  margin-bottom: 0 !important;
+}
+
+.nt-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: color 0.15s, background 0.15s;
+}
+.nt-modal-close:hover {
+  color: var(--text);
+  background: var(--item-hover);
+}
+
+.nt-modal-btn {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 8px 20px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+.nt-modal-btn:hover { opacity: 0.85; }
+
 /* ─── Desktop (≥768px) ───────────────────────────────────── */
 @media (min-width: 768px) {
   .top-bar { display: none; }
