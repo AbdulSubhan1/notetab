@@ -264,36 +264,6 @@ body {
   text-transform: uppercase;
 }
 
-/* ─── GitHub links footer ────────────────────────────────── */
-.site-footer {
-  text-align: center;
-  padding: 10px 16px;
-  border-top: 1px solid var(--border);
-}
-
-.footer-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  flex-wrap: wrap;
-}
-
-.footer-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  color: var(--muted);
-  text-decoration: none;
-  font-size: 12px;
-  font-family: inherit;
-  padding: 2px 4px;
-  border-radius: 4px;
-  transition: color 0.15s;
-}
-
-.footer-links a:hover { color: var(--text); text-decoration: underline; }
-
 .footer-sep {
   color: var(--muted);
   font-size: 12px;
@@ -314,6 +284,21 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
+}
+
+/* ─── Sidebar footer ─────────────────────────────────────── */
+.sidebar-footer {
+  border-top: 1px solid var(--border);
+  padding: 10px 12px 12px;
+  flex-shrink: 0;
+}
+
+.sidebar-footer-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin-bottom: 4px;
 }
 
 /* ─── Footer buttons ─────────────────────────────────────── */
