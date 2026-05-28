@@ -264,6 +264,48 @@ body {
   text-transform: uppercase;
 }
 
+/* ─── GitHub links footer ────────────────────────────────── */
+.site-footer {
+  text-align: center;
+  padding: 10px 16px;
+  border-top: 1px solid var(--border);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 12px;
+  font-family: inherit;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: color 0.15s;
+}
+
+.footer-links a:hover { color: var(--text); text-decoration: underline; }
+
+.footer-sep {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.gh-icon {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
 /* ─── SEO text (visually hidden, crawler-readable) ───────── */
 .seo-note {
   position: absolute;
