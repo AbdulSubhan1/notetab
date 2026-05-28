@@ -7,15 +7,22 @@
   <meta name="description" content="A fast, free online notepad. Open, type, and your notes are saved automatically in your browser. No account needed.">
   <meta name="keywords" content="online notepad, free notes, browser notepad, quick notes, no login, auto-save notepad, notepad no account">
   <meta name="author" content="Abdul Subhan" />
+  <meta name="publisher" content="Abdul Subhan" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://abdulsubhan1.github.io/notetab/" />
-  <meta property="og:title" content="NoteTab — Free Online Notepad">
-  <meta property="og:description" content="Type and your notes are saved instantly. No sign-up, no sync, just notes.">
-  <meta property="og:type" content="website">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://abdulsubhan1.github.io/notetab/" />
+  <meta property="og:title" content="NoteTab — Free Online Notepad" />
+  <meta property="og:description" content="Type and your notes are saved instantly. No sign-up, no sync, just notes." />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="NoteTab — Free Online Notepad" />
+  <meta name="twitter:description" content="Type and your notes are saved instantly. No sign-up, no sync, just notes." />
   <meta name="theme-color" content="#0f0f0f" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebApplication","name":"NoteTab","description":"Free browser-based notepad with no login required.","applicationCategory":"ProductivityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  {"@context":"https://schema.org","@type":"WebApplication","name":"NoteTab","description":"Free browser-based notepad with no login required.","applicationCategory":"ProductivityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"},"author":{"@type":"Person","name":"Abdul Subhan"},"publisher":{"@type":"Person","name":"Abdul Subhan"}}
   </script>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico" sizes="32x32">
@@ -55,12 +62,12 @@
         <button class="footer-btn" id="footer-privacy">Privacy</button>
       </div>
       <div class="sidebar-footer-links">
-        <a class="footer-btn footer-gh" href="https://github.com/AbdulSubhan1/notetab" target="_blank" rel="noopener" aria-label="Web app on GitHub">
+        <a class="footer-btn footer-gh" href="https://github.com/AbdulSubhan1/notetab" target="_blank" rel="noopener" aria-label="Web app on GitHub" title="NoteTab Web App on GitHub">
           <svg class="gh-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
           Web App
         </a>
         <span class="footer-sep" aria-hidden="true">·</span>
-        <a class="footer-btn footer-gh" href="https://github.com/AbdulSubhan1/notetab-extension" target="_blank" rel="noopener" aria-label="Extension on GitHub">
+        <a class="footer-btn footer-gh" href="https://github.com/AbdulSubhan1/notetab-extension" target="_blank" rel="noopener" aria-label="Extension on GitHub" title="NoteTab Extension on GitHub">
           <svg class="gh-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
           Extension
         </a>
@@ -113,7 +120,7 @@
       <button class="nt-modal-close" aria-label="Close">&#10005;</button>
       <h2 id="nt-feedback-title">Feedback</h2>
       <p>Found a bug or have a suggestion? I'd love to hear from you.</p>
-      <a class="nt-modal-btn" href="mailto:subbidurrani@gmail.com?subject=NoteTab%20Feedback">Send an email</a>
+      <a class="nt-modal-btn" href="mailto:subbidurrani@gmail.com?subject=NoteTab%20Feedback" title="Send feedback email">Send an email</a>
     </div>
   </dialog>
 
