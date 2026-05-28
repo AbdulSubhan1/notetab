@@ -1,4 +1,23 @@
-# NoteTab
+# NoteTab — Free Online Notepad & Note-Taking App
+
+**[🚀 Live Demo → abdulsubhan1.github.io/notetab](https://abdulsubhan1.github.io/notetab/)**
+
+A fast, free online note pad that runs entirely in your browser. Open it, start typing, and your notes save automatically — no account, no login, no install required.
+
+> **The simplest online notepad.** A lightweight alternative to Google Keep, Notion, or Evernote when you just need to keep notes quickly without signing into anything.
+
+### Why use NoteTab?
+
+- **Instant** — open the page and start typing immediately, zero setup
+- **Auto-saves** — notes are saved as you type, never lose your work
+- **Multiple notes** — create and switch between notes in one click
+- **Works offline** — fully functional without an internet connection
+- **Private** — everything stays in your browser, nothing sent to any server
+- **Free forever** — no subscription, no account, no catch
+
+**Keywords:** online notepad, notepad online, note pad, note-taking app, free notepad, digital notepad, quick notes, browser notepad, Google Keep alternative, Google notes alternative
+
+---
 
 A fast, zero-backend notepad that runs entirely in the browser. No login, no server, no database — notes are saved automatically in your browser's `localStorage`.
 
